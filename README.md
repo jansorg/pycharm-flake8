@@ -1,5 +1,7 @@
 # A fresh IntelliJ plugin
 
+[![Build Status](https://travis-ci.org/jansorg/intellij-plugin-base.svg?branch=master)](https://travis-ci.org/jansorg/intellij-plugin-base)
+
 This is a template for a new IntelliJ plugin build by Gradle.
 The file `intellij-plugin-base.iml` is the module file you should import in IntelliJ.
 
@@ -11,6 +13,10 @@ The build configuration uses Gradle with enabled Jacoco test coverage reports.
 - `src/main/resources`: Java resource files
 - `src/test/java`: Java test case sources
 - `src/test/resources`: Java test case resource files
+
+# Continous integration builds
+
+`.travis.yml` configures a [Travic-ci.org](https://travis-ci.org/) build.
 
 
 # Documentation
