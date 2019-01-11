@@ -1,5 +1,5 @@
 plugins {
-    id "org.jetbrains.intellij" version "0.2.15"
+    id "org.jetbrains.intellij" version "0.4.1"
 }
 
 repositories {
@@ -16,7 +16,7 @@ allprojects {
 
     apply plugin: 'org.jetbrains.intellij'
     intellij {
-        version 'IC-2017.2'
+        version 'IC-2018.3.3'
         pluginName 'MyNewPlugin'
 
         //plugin dependencies, see https://github.com/JetBrains/gradle-intellij-plugin
@@ -36,7 +36,7 @@ allprojects {
     // the coverage reports will be available at build/reports/coverage/test/html/index.html
     apply plugin: 'jacoco'
     jacoco {
-        toolVersion = "0.7.9"
+        toolVersion = "0.8.2"
         reportsDir = file("$buildDir/reports/coverage")
     }
     test {
@@ -60,8 +60,4 @@ allprojects {
             ]
         }
     }
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '3.4'
 }
