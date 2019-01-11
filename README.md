@@ -6,6 +6,7 @@ Welcome to the PyCharm webinar!
 This is the base setup used in Webinar. For details about the webinar see [the PyCharm blog](https://blog.jetbrains.com/pycharm/2018/12/webinar-live-development-of-a-pycharm-plugin-with-joachim-ansorg/).
 
 ## Please report an issue if the setup isn't working for you!
+These steps won't be shown in the webinar. They're necessary only once to setup your environment to work on a Python plugin.
 
 ## Setup your IDE
 1. Clone this repository:
