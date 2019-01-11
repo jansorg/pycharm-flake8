@@ -23,26 +23,46 @@ These steps won't be shown in the webinar. They're necessary only once to setup 
    - If it's the first statup, then it'll look like this. Choosing 'Skip Remaining and Set Defaults' is fine.
     
     ![](docs/intellij-initial-setup.png)
-   - Choose 'Open' if it's the first startup or "File > Open" if you're already using IntelliJ.
-1. Make sure to choose the repository directory `pycharm-webinar-base` in the file selector. If you don't then the project won't work for plugin development.
+   - **Choose 'Open'** if it's the first startup or **"File > Open"** if you're already using IntelliJ.
+1. Make sure to **choose the repository directory `pycharm-webinar-base` in the file selector**. If you don't then the project won't work for plugin development.
  
     ![](docs/intellij-welcome-open.png)
-1. **Setup your IntelliJ SDK**
-    - Choose `File > Project settings...`
+1. **Setup your Java 8 SDK**. IntelliJ still needs a Java 8 JDK. 
+    
+    Both OpenJDK or Oracle versions are compatible. Make sure to download a Java 8 SE JDK, not a JRE! Of course, if you 
+    already have Java 8 installed, then you dont't need to download it again.
+    
+    Oracle's downloads are available at [www.oracle.com/technetwork/java](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+     
+    - Choose `File > Project settings...`. Click on `New...`, then click on `JDK`.
  
-       ![](docs/intellij-setup-project.png)
-    - If you do not yet configured a Java SDK, then do this first. This has to be a Java 1.8 SDK!
+       ![](docs/intellij-setup-java-sdk-menu.png)
+       
+    - In the file selector choose the installation path of your Java 8 SDK:   
+       
+       ![](docs/intellij-setup-java-sdk.png)
+       
     - Now setup your IntelliJ SDK. Click `New...` on the project page and select `IntelliJ Platform Plugin SDK`. The default location should be the installation path of your IntelliJ 2018.3.3. Use this path for your new SDK setting.  
        
        ![](docs/intellij-setup-sdk-screen.png)
-    - Make sure to choose your Java 1.8 SDK in the next screen:
+    - Make sure to select your Java 1.8 SDK in the next screen:
       
        ![](docs/intellij-setup-sdk-java.png)
-1. Now **download the Python plugin** to wrap up the setup of your project's SDK. 
+1. **Configure your IntelliJ SDK**
+    - **Choose** `File > Project settings...`
+ 
+       ![](docs/intellij-setup-project.png)
+    - Now **setup your IntelliJ SDK**. Click `New...` on the project page and select `IntelliJ Platform Plugin SDK`. The default location should be the installation path of your IntelliJ 2018.3.3. Use this path for your new SDK setting.  
+       
+       ![](docs/intellij-setup-sdk-screen.png)
+    - Make sure to **choose your Java 1.8 SDK** in the next screen:
+      
+       ![](docs/intellij-setup-sdk-java.png)
+1. Now **download the Python plugin** to finish the setup of your project's SDK. 
 
-   The PyCharm package can't be used as an SDK because it's not coming with the plugin development tooling we need.
+   Note: The PyCharm package can't be used as an SDK because it's not coming with the plugin development tooling we need.
    
-   Download the PyCharm plugin which matches your edition of IntelliJ. Choose the download which is compatible with 2018.3.3. 
+   Download the PyCharm plugin which matches your edition of IntelliJ. Choose the download which is compatible with 2018.3.3. The red markers are highlighting the compatible versions.
    - Plugin for IntelliJ Community: https://plugins.jetbrains.com/plugin/7322-python-community-edition\
    
      ![](docs/plugin-community.png)
