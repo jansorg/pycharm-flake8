@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/jansorg/pycharm-webinar-base.svg?branch=master)](https://travis-ci.org/jansorg/pycharm-webinar-base)
-
 # PyCharm Webinar 2019
 Welcome to the PyCharm webinar!
 
