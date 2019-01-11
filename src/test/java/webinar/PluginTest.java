@@ -1,4 +1,4 @@
-package com.test;
+package webinar;
 
 import org.junit.Assert;
 import org.junit.Test;
