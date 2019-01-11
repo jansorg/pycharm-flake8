@@ -6,7 +6,9 @@ Welcome to the PyCharm webinar!
 This is the base setup used in Webinar. For details about the webinar see [the PyCharm blog](https://blog.jetbrains.com/pycharm/2018/12/webinar-live-development-of-a-pycharm-plugin-with-joachim-ansorg/).
 
 ## Please report an issue if the setup isn't working for you!
-These steps won't be shown in the webinar. They're necessary only once to setup your environment to work on a Python plugin.
+I'm sorry that the initial setup is this complicated. You'll only need to this once, promise!
+
+These steps won't be shown during the webinar. They're necessary only once to setup your environment to work on a Python plugin.
 
 ## Setup your IDE
 1. **Clone** this repository:
@@ -87,6 +89,13 @@ These steps won't be shown in the webinar. They're necessary only once to setup 
    there's something wrong with your setup.
 
 ## General notes
+
+### Run the plugin using Gradle
+If you just want to execute your plugin in a IntelliJ test environment then execute this command:```bash
+```bash
+gradle runIDE
+```
+Of course, you'll need to [install Gradle](https://gradle.org/install/) if you've not yet done that.
 
 ### Directory structure
 - `src/main/java`: Java sources
