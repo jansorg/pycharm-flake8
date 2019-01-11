@@ -9,17 +9,17 @@ This is the base setup used in Webinar. For details about the webinar see [the P
 These steps won't be shown in the webinar. They're necessary only once to setup your environment to work on a Python plugin.
 
 ## Setup your IDE
-1. Clone this repository:
+1. **Clone** this repository:
    ```bash
    git clone https://github.com/jansorg/pycharm-webinar-base.git
    ```
-1. Install IntelliJ 2018.3.3 (Community or Ultimate). 
+1. **Install IntelliJ 2018.3.3** (Community or Ultimate). 
 
    Download it from [JetBrains](https://www.jetbrains.com/idea/). Feel free to use the Toolbox app, if you prefer that.
     
    In the following steps we assume that you downloaded 2018.3.3. 
    If you didn't, then make sure that you choose the right versions of the Python plugins.
-1. Start the IDE. Make sure that the DevKit plugin is enabled, we'll need it!
+1. **Start the IntelliJ IDE**. Make sure that the DevKit plugin is enabled, we'll need it!
    - If it's the first statup, then it'll look like this. Choosing 'Skip Remaining and Set Defaults' is fine.
     
     ![](docs/intellij-initial-setup.png)
@@ -27,7 +27,7 @@ These steps won't be shown in the webinar. They're necessary only once to setup 
 1. Make sure to choose the repository directory `pycharm-webinar-base` in the file selector. If you don't then the project won't work for plugin development.
  
     ![](docs/intellij-welcome-open.png)
-1. Setup your IntelliJ SDK
+1. **Setup your IntelliJ SDK**
     - Choose `File > Project settings...`
  
        ![](docs/intellij-setup-project.png)
@@ -38,7 +38,7 @@ These steps won't be shown in the webinar. They're necessary only once to setup 
     - Make sure to choose your Java 1.8 SDK in the next screen:
       
        ![](docs/intellij-setup-sdk-java.png)
-1. Now you have to download the Python plugin to properly setup you project's SDK. 
+1. Now **download the Python plugin** to wrap up the setup of your project's SDK. 
 
    The PyCharm package can't be used as an SDK because it's not coming with the plugin development tooling we need.
    
@@ -49,8 +49,8 @@ These steps won't be shown in the webinar. They're necessary only once to setup 
    - Plugin for IntelliJ Ultimate: https://plugins.jetbrains.com/plugin/631-python
    
       ![](docs/plugin-ultimate.png)
-1. The downloaded file is a ZIP file. Unzip it on disk. We'll need it in the next step.
-1. Add the PyCharm plugin to the SDK to let IntelliJ know about the Python plugin: 
+1. The downloaded file is a ZIP file. **Unzip** it on disk. We'll need it in the next step.
+1. **Add the PyCharm plugin to the SDK** to let IntelliJ know about the Python plugin: 
    1. Choose `File > Project Settings ...` and select the page `SDK`:
   
       ![](docs/intellij-sdk-pycharm-plugin.png)
@@ -60,7 +60,7 @@ These steps won't be shown in the webinar. They're necessary only once to setup 
    1. Close the dialog with `Ok`.
      
 1. Almost ready! 
-1. Run the plugin to test your environment: Click on the little arrow next to the run configuration `Webinar Plugin`:
+1. **Run the plugin to test your environment**: Click on the little arrow next to the run configuration `Webinar Plugin`:
 
    ![](docs/intellij-run-config.png)
 1. Now the plugin will be compiled, packaged and started within a new instance of IntelliJ. If you see error messages, the
