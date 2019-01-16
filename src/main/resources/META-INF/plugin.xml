@@ -17,7 +17,7 @@
 
     <depends>com.intellij.modules.lang</depends>
     <!-- Depend on the Python plugin. Also works in the different editions of PyCharm. -->
-    <depends>PythonCore</depends>
+    <depends>com.intellij.modules.python</depends>
 
     <idea-version since-build="183.0"/>
 
