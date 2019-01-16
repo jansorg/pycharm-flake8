@@ -103,6 +103,8 @@ public class FlakeInspectionSuppressor implements InspectionSuppressor {
     @NotNull
     @Override
     public SuppressQuickFix[] getSuppressActions(@Nullable PsiElement element, @NotNull String toolId) {
-        return new SuppressQuickFix[0];
+        return new SuppressQuickFix[]{
+                new Flake8EndOfLineSuppressionQuickFix()
+        };
     }
 }
