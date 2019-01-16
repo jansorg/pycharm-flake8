@@ -4,30 +4,24 @@
 -->
 
 <idea-plugin>
-    <id>python-webinar</id>
-    <name>Python Webinar 2019</name>
+    <id>python-flake8</id>
+    <name>Flake8 support</name>
     <version>0.1.0</version>
     <vendor email="mail@plugin-dev.com" url="https://www.plugin-dev.com">Joachim Ansorg</vendor>
 
     <description><![CDATA[
-      This is a small plugin to demonstrate how to implement support for flake8 #noqa markers.
-      Checkout https://blog.jetbrains.com/pycharm/2018/12/webinar-live-development-of-a-pycharm-plugin-with-joachim-ansorg/ to register.
-      The recording will be made available after the webinar.
+      This plugin adds support for flake8's markers <em># noqa</em> and <em># flake8: noqa</em>.
+
+      Most of the implementation was shown during the PyCharm webinar <a href="https://blog.jetbrains.com/pycharm/2018/12/webinar-live-development-of-a-pycharm-plugin-with-joachim-ansorg/">Live Development of a PyCharm Plugin</a>.
     ]]></description>
 
     <depends>com.intellij.modules.lang</depends>
     <!-- Depend on the Python plugin. Also works in the different editions of PyCharm. -->
     <depends>PythonCore</depends>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
     <idea-version since-build="183.0"/>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!--
-            inspectionSuppressor is the extension point we're going to implement.
-            Uncomment the line below and implement the implementationClass.
-            There's a quick-fix on 'webinar.FlakeInspectionSuppressor' to quickly create the class.
-        -->
         <lang.inspectionSuppressor language="Python" implementationClass="webinar.FlakeInspectionSuppressor" />
     </extensions>
 </idea-plugin>
