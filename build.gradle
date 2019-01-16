@@ -17,10 +17,11 @@ allprojects {
     apply plugin: 'org.jetbrains.intellij'
     intellij {
         version 'IC-2018.3.3'
-        pluginName 'pycharm-webinar-base'
+        pluginName 'python-flake8'
+        updateSinceUntilBuild false
 
         //plugin dependencies, see https://github.com/JetBrains/gradle-intellij-plugin
-        //plugins 'IntelliLang'
+        plugins 'PythonCore:2018.3.183.5153.38'
     }
 
     publishPlugin {

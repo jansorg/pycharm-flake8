@@ -1,7 +1,37 @@
-# PyCharm Webinar 2019
-Welcome to the PyCharm webinar!
+# Flake8 support
+This plugin adds support for flake8 `# noqa` and `# flake8: noqa`.
+With this plugin installed PyCharm will now show error markers any more as long as one of the two markers are defined.
 
-This is the base setup used in Webinar. For details about the webinar see [the PyCharm blog](https://blog.jetbrains.com/pycharm/2018/12/webinar-live-development-of-a-pycharm-plugin-with-joachim-ansorg/).
+Previously you had to do this to remove warnings from both flake8 and PyCharm:
+```python
+# noinspection PyUnusedLocal
+def foo():
+    x = 1 # noqa
+```
+
+Now you can just use flake8's markers:
+```python
+def foo():
+    x = 1 # noqa
+```
+
+or 
+
+```python
+# flake8: noqa
+def foo():
+    x = 1
+```
+
+# Contribution guidelines
+- I'm not planning to do much further work on this but I'm always glad to get pull requests
+- This code and your contribution is licensed under the BSD-2-clause license. 
+
+# Webinar info
+For details about the webinar see [the PyCharm blog](https://blog.jetbrains.com/pycharm/2018/12/webinar-live-development-of-a-pycharm-plugin-with-joachim-ansorg/).
+The repository used as base for the webinar is available at https://github.com/jansorg/pycharm-webinar-base.
+
+The info below is still useful it you'd like to work on plugin.
 
 ## Please report an issue if the setup isn't working for you!
 I'm sorry that the initial setup is this complicated. You'll only need to this once, promise!
