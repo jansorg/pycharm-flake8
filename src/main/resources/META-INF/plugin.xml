@@ -10,7 +10,7 @@
     <vendor email="mail@plugin-dev.com" url="https://www.plugin-dev.com">Joachim Ansorg</vendor>
 
     <description><![CDATA[
-      This plugin adds support for flake8's markers <em># noqa</em> and <em># flake8: noqa</em>.
+      This plugin adds support for flake8's markers <em># noqa</em> and <em># flake8: noqa</em>.<br>
 
       Most of the implementation was shown during the PyCharm webinar <a href="https://blog.jetbrains.com/pycharm/2018/12/webinar-live-development-of-a-pycharm-plugin-with-joachim-ansorg/">Live Development of a PyCharm Plugin</a>.
     ]]></description>
