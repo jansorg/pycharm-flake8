@@ -12,6 +12,8 @@
     <description><![CDATA[
       This plugin adds support for flake8's markers <em># noqa</em> and <em># flake8: noqa</em>.<br>
 
+      You're not able to use <code># noqa</code> or <code># flake8: noqa</code>. There's no more need for <code># noinspection PyUnusedLocal</code> etc..
+
       Most of the implementation was shown during the PyCharm webinar <a href="https://blog.jetbrains.com/pycharm/2018/12/webinar-live-development-of-a-pycharm-plugin-with-joachim-ansorg/">Live Development of a PyCharm Plugin</a>.
     ]]></description>
 
