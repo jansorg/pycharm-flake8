@@ -28,6 +28,6 @@
             Uncomment the line below and implement the implementationClass.
             There's a quick-fix on 'webinar.FlakeInspectionSuppressor' to quickly create the class.
         -->
-        <!--<lang.inspectionSuppressor language="Python" implementationClass="webinar.FlakeInspectionSuppressor" />-->
+        <lang.inspectionSuppressor language="Python" implementationClass="webinar.FlakeInspectionSuppressor" />
     </extensions>
 </idea-plugin>
