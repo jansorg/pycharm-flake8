@@ -119,7 +119,7 @@ These steps won't be shown during the webinar. They're necessary only once to se
 ## General notes
 
 ### Run the plugin using Gradle
-If you just want to execute your plugin in a IntelliJ test environment then execute this command:```bash
+If you just want to execute your plugin in a IntelliJ test environment then execute this command:
 ```bash
 gradle runIDE
 ```
